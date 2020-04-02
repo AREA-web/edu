@@ -28,6 +28,8 @@
   --breakpoint-xl: 1200px;
   --font-family-sans-serif: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --myColor : #ffa41b;
+  --myColorblack : #be7d1c ; 
 }
 
 *,
@@ -2447,29 +2449,48 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #f4623a;
-  border-color: #f4623a;
+  /* background-color: #f4623a; */
+  background-color: var(--myColor);
+
+  /* border-color: #f4623a; */
+  border-color: var(--myColor) ;
+
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #f24516;
-  border-color: #ee3e0d;
+  /* background-color: #f24516; */
+  background-color:  var(--myColorblack);
+
+  /* border-color: #ee3e0d; */
 }
 .btn-primary:focus, .btn-primary.focus {
   color: #fff;
-  background-color: #f24516;
-  border-color: #ee3e0d;
+  /* background-color: #f24516; */
+  background-color: var(--myColor);
+
+  /* border-color: #ee3e0d; */
+  border-color: var(--myColor);
+
+
   box-shadow: 0 0 0 0.2rem rgba(246, 122, 88, 0.5);
 }
 .btn-primary.disabled, .btn-primary:disabled {
   color: #fff;
-  background-color: #f4623a;
-  border-color: #f4623a;
+  /* background-color: #f4623a; */
+  background-color: var(--myColor);
+
+  /* border-color: #f4623a; */
+  border-color: var(--myColor);
+
 }
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #ee3e0d;
-  border-color: #e23a0d;
+  /* background-color: #ee3e0d; */
+  background-color: var(--myColorblack);
+
+  /* border-color: #e23a0d; */
+  border-color: var(--myColorblack);
+
 }
 .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(246, 122, 88, 0.5);
@@ -2698,13 +2719,19 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 0.2rem rgba(244, 98, 58, 0.5);
 }
 .btn-outline-primary.disabled, .btn-outline-primary:disabled {
-  color: #f4623a;
+  /* color: #f4623a; */
+  color: var(--myColor);
+
   background-color: transparent;
 }
 .btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active, .show > .btn-outline-primary.dropdown-toggle {
   color: #fff;
-  background-color: #f4623a;
-  border-color: #f4623a;
+  /* background-color: #f4623a; */
+  background-color: var(--myColor);
+
+  /* border-color: #f4623a; */
+  border-color: var(--myColor);
+
 }
 .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(244, 98, 58, 0.5);
@@ -2887,11 +2914,15 @@ fieldset:disabled a.btn {
 
 .btn-link {
   font-weight: 400;
-  color: #f4623a;
+  /* color: #f4623a; */
+  color: var(--myColor);
+
   text-decoration: none;
 }
 .btn-link:hover {
-  color: #d6370c;
+  /* color: #d6370c; */
+  color: var(--myColorblack);
+
   text-decoration: underline;
 }
 .btn-link:focus, .btn-link.focus {
@@ -4672,11 +4703,15 @@ a.badge:hover, a.badge:focus {
 
 .badge-primary {
   color: #fff;
-  background-color: #f4623a;
+  /* background-color: #f4623a; */
+  background-color: var(--myColor);
+
 }
 a.badge-primary:hover, a.badge-primary:focus {
   color: #fff;
-  background-color: #ee3e0d;
+  /* background-color: #ee3e0d; */
+  background-color: var(--myColorblack);
+
 }
 a.badge-primary:focus, a.badge-primary.focus {
   outline: 0;
@@ -5172,7 +5207,9 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 .list-group-item-primary {
-  color: #7f331e;
+  /* color: #7f331e; */
+  color: var(--myColorblack);
+
   background-color: #fcd3c8;
 }
 .list-group-item-primary.list-group-item-action:hover, .list-group-item-primary.list-group-item-action:focus {
@@ -6057,13 +6094,18 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #f4623a !important;
+  /* background-color: #f4623a !important; */
+  background-color: var(--myColor) !important;
+
+
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
-  background-color: #ee3e0d !important;
+  /* background-color: #ee3e0d !important; */
+  background-color: var(--myColor) !important;
+
 }
 
 .bg-secondary {
@@ -9738,11 +9780,16 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #f4623a !important;
+  /* color: #f4623a !important; */
+  color: var(--myColor) !important;
+
 }
 
 a.text-primary:hover, a.text-primary:focus {
-  color: #d6370c !important;
+  /* color: #d6370c !important; */
+  background-color: var(--myColorblack) !important;
+
+
 }
 
 .text-secondary {
@@ -9991,10 +10038,14 @@ hr.light {
   padding: 0.75rem 0;
 }
 #mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:active {
-  color: #f4623a;
+  /* color: #f4623a; */
+  color: var(--myColor) !important;
+
 }
 #mainNav .navbar-nav .nav-item .nav-link.active {
-  color: #f4623a !important;
+  /* color: #f4623a !important; */
+  color: var(--myColor) !important;
+
 }
 @media (min-width: 992px) {
   #mainNav {
@@ -10109,12 +10160,14 @@ header.masthead h1 {
 
 /* my add */
 
-a.d-block:hover , button.btn-link:hover , button.show , button.btn-link:focus {
+a.d-block:hover , a.d-inline:hover , button.btn-link:hover , button.show , button.btn-link:focus {
   text-decoration: none !important;
 }
 
 button.show{
-  color: coral !important;
+  /* color: coral !important; */
+  color: var(--myColor) !important;
+
 }
 
 a , button.collapsed {
@@ -10141,5 +10194,33 @@ a , button.collapsed {
   /* margin-bottom: 30px; */
 }
 
+.blog-entry:hover{
+  box-shadow: 5px 13px 10px;
+  transition: all .5s ease-in-out;
+}
+
+.blog-entry{
+  background-color: #fff;
+  line-height: 2;
+  transition: all .5s ease-in-out;
+}
+
+.blog-entry:hover{
+  box-shadow: 5px 13px 10px;
+  transition: all .5s ease-in-out;
+}
+
+.img-card {
+  width: 100%;
+}
+
+ul li {
+  list-style-type: none;
+  display: inline;
+}
+
+ul li svg {
+  font-size: 30px !important;
+}
 /* my add */
 
