@@ -16,6 +16,10 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+        <!-- amimate css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=" crossorigin="anonymous" />
+
+
         <!-- Css only -->
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/myStyle.css" rel="stylesheet" />
@@ -36,7 +40,7 @@
                     <ul class="navbar-nav ml-auto my-2 my-lg-0">
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about"> معلومات عننا </a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services"> الاقسام الموجودة </a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio"> المواد </a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Portfolio"> المواد </a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact"> تواصل معنا </a></li>
                     </ul>
                 </div>
@@ -48,7 +52,12 @@
             <div class="container h-100">
                 <div class="row h-100 align-items-center justify-content-center text-center">
                     <div class="col-lg-10 align-self-end">
-                        <h1 class="text-uppercase text-white font-weight-bold"> افضل مصدر لجميع المناهج </h1>
+
+                        <div class="col-md-12 text-center heading-section ftco-animate">
+                            <span class="subheading"> electronics </span>
+                          <h2 class="mb-4"> محاضرات وسكاشن </h2>
+                        </div>
+
                         <hr class="divider my-4" />
                     </div>
                     <div class="col-lg-8 align-self-baseline">
@@ -58,6 +67,23 @@
                 </div>
             </div>
         </header>
+
+        <!-- end navbar -->
+            
+        <section class="option-box">
+            <div class="color-option collapse" id="colorbox" style="height: 20px">
+              color option
+              <ul class="list-unstyled">
+                <li data-value="default-theme.css" ></li>
+                <li data-value="blue-theme.css"></li>
+                <li data-value="treco-theme.css"></li>
+                <li data-value="purple-theme.css"></li>
+                <li data-value="green-theme.css"></li>
+              </ul>
+            </div>
+
+           <img src="icons/settings.svg" class=" fa-x" data-toggle="collapse" data-target="#colorbox">
+          </section>
 
         <!-- About section-->
         <section class="page-section bg-primary" id="about">
@@ -181,191 +207,225 @@
 
             <div id="accordion">
                 
+                
                 <div class="card">
-                    <div class="card-header" id="headingThree">
+                    <div class="card-header" id="headingOne">
                       <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                          الفرقة الثالثة
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseZero" aria-expanded="true" aria-controls="collapseZero">
+                          المحاضرات والسكاشن
                         </button>
                       </h5>
                     </div>
-                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                
+                    <div id="collapseZero" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                       <div class="card-body">
       
+                           <!-- Call to action section-->
+                           <section class="page-section bg-dark text-white">
+                            <div class="container text-center">
+    
+                                <div class="row">
+                                    
+                                      <table class="table table-hover table-dark">
+                                          <thead>
+                                            <tr>
+                                              <th scope="col">#</th>
+                                              <th scope="col"> السكاشن </th>
+                                              <th scope="col"> المحاضرات </th>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr>
+                                              <th scope="row">1</th>
+                                              <td>
+                                                  <!-- Button trigger modal -->
+                                                  <div class="btn-group">
+                                                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sec1">
+                                                          section 1
+                                                      </button>
+                                                      <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                          <span class="sr-only">Toggle Dropdown</span>
+                                                      </button>
+                                                  <!-- split button -->
+                                                      <div class="dropdown-menu">
+                                                          <a class="dropdown-item" href="#"> عرض الحلول </a>
+                                                          <a class="dropdown-item" href="#"> الفيديو </a>
+                                                      </div>
+                                                  </div>
+
+                                                  
+                                              </td>
+                                              <td>
+                                                  <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#lec1">
+                                                      lecture 1
+                                                  </button>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <th scope="row">2</th>
+                                              <td>
+                                                  <!-- Button trigger modal -->
+                                                  <div class="btn-group">
+                                                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sec2">
+                                                          section 2
+                                                      </button>
+                                                      <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                          <span class="sr-only">Toggle Dropdown</span>
+                                                      </button>
+                                                  <!-- split button -->
+                                                      <div class="dropdown-menu">
+                                                          <a class="dropdown-item" href="#"> عرض الحلول </a>
+                                                          <a class="dropdown-item" href="#"> الفيديو </a>
+                                                      </div>
+                                                  </div>
+
+                                                  
+                                              </td>
+                                              <td>
+                                                  <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#lec2">
+                                                      lecture 2
+                                                  </button>
+                                              </td>
+                                            </tr>
+                                            
+                                          </tbody>
+                                        </table>
+
+
+                                       <!-- ***************************** start lectures Modals ***************************** -->
+                                          <!-- Modal1 -->
+                                          <div class="modal fade" id="lec1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                              <div class="modal-dialog" role="document">
+                                                  <div class="modal-content">
+                                                      <div class="modal-header">
+                                                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                          <span aria-hidden="true">&times;</span>
+                                                      </button>
+                                                      </div>
+
+                                                      <div class="modal-body">
+                                                        <iframe src="https://drive.google.com/file/d/1ivRfVzqGtqDJw2FCsK9RZCcg_8jEYf01/preview" width="640" height="480"></iframe>
+                                                      </div>
+
+                                                      <div class="modal-footer">
+                                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                                          <a href="https://drive.google.com/uc?export=download&id=1ivRfVzqGtqDJw2FCsK9RZCcg_8jEYf01" class="btn btn-primary"> download </a>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+
+                                          <!-- Modal2 -->
+                                          <div class="modal fade" id="lec2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                              <div class="modal-dialog" role="document">
+                                                  <div class="modal-content">
+                                                      <div class="modal-header">
+                                                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                          <span aria-hidden="true">&times;</span>
+                                                      </button>
+                                                      </div>
+                                                      
+                                                      <div class="modal-body">
+                                                        <iframe src="https://drive.google.com/file/d/1gYpSbmAGQXYNuGJ_PT9zfW9nQcR4thTG/preview" width="640" height="480"></iframe>
+                                                      </div>
+
+                                                      <div class="modal-footer">
+                                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                                          <a href="https://drive.google.com/uc?export=download&id=1gYpSbmAGQXYNuGJ_PT9zfW9nQcR4thTG" class="btn btn-primary"> download </a>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+
+
+                                       <!-- ***************************** end lectures Modals ***************************** -->
+
+
+                                      <!-- ***************************** start sections Modals ***************************** -->
+
+                                      <!-- Modal1 -->
+                                      <div class="modal fade" id="sec1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog" role="document">
+                                              <div class="modal-content">
+                                                  <div class="modal-header">
+                                                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                      <span aria-hidden="true">&times;</span>
+                                                  </button>
+                                                  </div>
+
+                                                  <div class="modal-body">
+                                                      <iframe src="https://drive.google.com/file/d/1dAqRmaM5Y94-z74qj8spLLtSMT32TgF5/preview" width="640" height="480"></iframe>
+                                                  </div>
+
+                                                  <div class="modal-footer">
+                                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                      <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                                      <a href="https://drive.google.com/uc?export=download&id=1dAqRmaM5Y94-z74qj8spLLtSMT32TgF5" class="btn btn-primary"> download </a>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+
+                                      <!-- Modal2 -->
+                                      <div class="modal fade" id="sec2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog" role="document">
+                                              <div class="modal-content">
+                                                  <div class="modal-header">
+                                                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                      <span aria-hidden="true">&times;</span>
+                                                  </button>
+                                                  </div>
+                                                  
+                                                  <div class="modal-body">
+                                                        <iframe class="embed-responsive-item" id="video" src="https://drive.google.com/file/d/1wGwpjIbo_360Qy3WmDB8neZLta9lSSC-/preview"></iframe>
+                                                  </div>
+
+                                                  <div class="modal-footer">
+                                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                      <button type="button" class="btn btn-primary">Save changes</button>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+
+                                      <!-- ***************************** end sections Modals ***************************** -->
+
+                                    
+                                </div>
+    
+                            </div>
+                        </section>
+      
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="card">
+                    <div class="card-header" id="headingTwo">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          روابط اخري
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                      <div class="card-body">
+                          
                           <!-- Call to action section-->
-                          <section class="page-section bg-dark text-white">
+                          <section class="page-section bg-dark ">
                               <div class="container text-center">
       
-                                  <div class="row no-gutters">
+                                  <div class="row ">
                                       <div class="col-lg-12 ">
-      
-                                          <!-- Button trigger modal -->
-      
-                                              <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#civil3"> مدني </button>
-                                              <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#electric3"> كهربا </button>
-                                              <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#arc3"> عمارة </button>
-                                              <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#struct3"> انشاءات </button>
-      
-      
+                                        <a href=" https://chat.whatsapp.com/IfEHN8Ya94gL6nW2tJBleE" class="btn btn-primary btn-lg btn-block"> جروب واتس </a>
                                       </div>
-      
-                                          <!-- civilModal -->
-                                          <div class="modal fade" id="civil3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                              <div class="modal-dialog modal-dialog-scrollable" role="document">
-                                                  <div class="modal-content">
-                                                      <div class="modal-header">
-                                                          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-      
-                                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                              <span aria-hidden="true">&times;</span>
-                                                          </button>
-                                                      </div>
-      
-                                                      <div class="modal-body">
-                                                      
-                                                          <!-- ************* subjects start *************  -->
-                                                          <!-- start subjects links -->
-      
-                                                                  <a class="btn btn-primary btn-lg btn-block" href="department.html"> الكترونيات </a> <!-- sub1  -->
-                                                                  <a class="btn btn-primary btn-lg btn-block" href="department.html"> دوائر كهربية 2 </a> <!-- sub2  -->
-                                                                  <a class="btn btn-primary btn-lg btn-block" href="department.html"> دوائر رقمية </a> <!-- sub3  -->
-                                                                  <a class="btn btn-primary btn-lg btn-block" href="department.html"> ثيرمو ديناميك </a> <!-- sub4  -->
-                                                                  <a class="btn btn-primary btn-lg btn-block" href="department.html"> مجالات كهرومغناطيسية (فيد 1)  </a> <!-- sub5  -->
-                                                                  <a class="btn btn-primary btn-lg btn-block" href="department.html"> تالريخ </a> <!-- sub6  -->
-      
-                                                          <!-- end subjects links -->
-                                                          <!-- ************* subjects end ************* -->
-      
-      
-                                                          
-      
-                                                      </div>
-      
-                                                      <div class="modal-footer">
-                                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                          <button type="button" class="btn btn-primary">Save changes</button>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                          </div>
-      
-                                          <!-- electricModal -->
-                                          <div class="modal fade" id="electric3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                              <div class="modal-dialog modal-dialog-scrollable" role="document">
-                                                  <div class="modal-content">
-                                                      <div class="modal-header">
-                                                          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-      
-                                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                              <span aria-hidden="true">&times;</span>
-                                                          </button>
-                                                      </div>
-      
-                                                      <div class="modal-body">
-      
-                                                          <!-- ************* subjects start *************  -->
-                                                          <!-- start subjects links -->
-      
-                                                                  <a class="btn btn-primary btn-lg btn-block" href="department.html"> الكترونيات </a> <!-- sub1  -->
-                                                                  <a class="btn btn-primary btn-lg btn-block" href="department.html"> دوائر كهربية 2 </a> <!-- sub2  -->
-                                                                  <a class="btn btn-primary btn-lg btn-block" href="department.html"> دوائر رقمية </a> <!-- sub3  -->
-                                                                  <a class="btn btn-primary btn-lg btn-block" href="department.html"> ثيرمو ديناميك </a> <!-- sub4  -->
-                                                                  <a class="btn btn-primary btn-lg btn-block" href="department.html"> مجالات كهرومغناطيسية (فيد 1)  </a> <!-- sub5  -->
-                                                                  <a class="btn btn-primary btn-lg btn-block" href="department.html"> تالريخ </a> <!-- sub6  -->
-      
-                                                          <!-- end subjects links -->
-                                                          <!-- ************* subjects end ************* -->
-      
-      
-                                                      </div>
-      
-                                                      <div class="modal-footer">
-                                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                          <button type="button" class="btn btn-primary">Save changes</button>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                          
-                                          
-                                          <!-- architectureModal -->
-                                          <div class="modal fade" id="arc3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                              <div class="modal-dialog" role="document">
-                                                  <div class="modal-content">
-                                                      <div class="modal-header">
-                                                          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-      
-                                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                              <span aria-hidden="true">&times;</span>
-                                                          </button>
-                                                      </div>
-      
-                                                      <div class="modal-body">
-                                                      
-                                                          <!-- ************* subjects start *************  -->
-                                                          <!-- start subjects links -->
-      
-                                                                  <a class="btn btn-primary btn-lg btn-block" href="department.html"> الكترونيات </a> <!-- sub1  -->
-                                                                  <a class="btn btn-primary btn-lg btn-block" href="department.html"> دوائر كهربية 2 </a> <!-- sub2  -->
-                                                                  <a class="btn btn-primary btn-lg btn-block" href="department.html"> دوائر رقمية </a> <!-- sub3  -->
-                                                                  <a class="btn btn-primary btn-lg btn-block" href="department.html"> ثيرمو ديناميك </a> <!-- sub4  -->
-                                                                  <a class="btn btn-primary btn-lg btn-block" href="department.html"> مجالات كهرومغناطيسية (فيد 1)  </a> <!-- sub5  -->
-                                                                  <a class="btn btn-primary btn-lg btn-block" href="department.html"> تالريخ </a> <!-- sub6  -->
-      
-                                                          <!-- end subjects links -->
-                                                          <!-- ************* subjects end ************* -->
-      
-                                                          
-                                                      </div>
-      
-                                                      <div class="modal-footer">
-                                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                          <button type="button" class="btn btn-primary">Save changes</button>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                          </div>
-      
-                                          
-                                          <!-- structureModal -->
-                                          <div class="modal fade" id="struct3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                              <div class="modal-dialog" role="document">
-                                                  <div class="modal-content">
-                                                      <div class="modal-header">
-                                                          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-      
-                                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                              <span aria-hidden="true">&times;</span>
-                                                          </button>
-                                                      </div>
-      
-                                                      <div class="modal-body">
-                                                      
-                                                          <!-- ************* subjects start *************  -->
-                                                          <!-- start subjects links -->
-      
-                                                                  <a class="btn btn-primary btn-lg btn-block" href="department.html"> الكترونيات </a> <!-- sub1  -->
-                                                                  <a class="btn btn-primary btn-lg btn-block" href="department.html"> دوائر كهربية 2 </a> <!-- sub2  -->
-                                                                  <a class="btn btn-primary btn-lg btn-block" href="department.html"> دوائر رقمية </a> <!-- sub3  -->
-                                                                  <a class="btn btn-primary btn-lg btn-block" href="department.html"> ثيرمو ديناميك </a> <!-- sub4  -->
-                                                                  <a class="btn btn-primary btn-lg btn-block" href="department.html"> مجالات كهرومغناطيسية (فيد 1)  </a> <!-- sub5  -->
-                                                                  <a class="btn btn-primary btn-lg btn-block" href="department.html"> تالريخ </a> <!-- sub6  -->
-      
-                                                          <!-- end subjects links -->
-                                                          <!-- ************* subjects end ************* -->
-      
-      
-                                                      </div>
-      
-                                                      <div class="modal-footer">
-                                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                          <button type="button" class="btn btn-primary">Save changes</button>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                          </div>
-      
-                                      
                                   </div>
       
                               </div>
@@ -374,164 +434,7 @@
                       </div>
                     </div>
                   </div>
-    
-                          <!-- Call to action section-->
-                          <section class="page-section bg-dark text-white">
-                              <div class="container text-center">
-      
-                                  <div class="row no-gutters">
-                                      
-                                        <table class="table table-hover table-dark">
-                                            <thead>
-                                              <tr>
-                                                <th scope="col">#</th>
-                                                <th scope="col"> السكاشن </th>
-                                                <th scope="col"> المحاضرات </th>
-                                              </tr>
-                                            </thead>
-                                            <tbody>
-                                              <tr>
-                                                <th scope="row">1</th>
-                                                <td>
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sec1">
-                                                        section 1
-                                                    </button>
-                                                </td>
-                                                <td>
-                                                    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#lec1">
-                                                        lecture 1
-                                                    </button>
-                                                </td>
-                                              </tr>
-                                              <tr>
-                                                <th scope="row">2</th>
-                                                <td>
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sec2">
-                                                        section 2
-                                                    </button>
-                                                </td>
-                                                <td>
-                                                    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#lec2">
-                                                        lecture 2
-                                                    </button>
-                                                </td>
-                                              </tr>
-                                              
-                                            </tbody>
-                                          </table>
 
-
-                                         <!-- ***************************** start lectures Modals ***************************** -->
-                                            <!-- Modal1 -->
-                                            <div class="modal fade" id="lec1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                <div class="modal-dialog" role="document">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header">
-                                                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                            <span aria-hidden="true">&times;</span>
-                                                        </button>
-                                                        </div>
-
-                                                        <div class="modal-body">
-                                                            <iframe src="https://drive.google.com/file/d/1dAqRmaM5Y94-z74qj8spLLtSMT32TgF5/preview" width="640" height="480"></iframe>
-                                                        </div>
-
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-                                                            <a href="https://drive.google.com/uc?export=download&id=1dAqRmaM5Y94-z74qj8spLLtSMT32TgF5" class="btn btn-primary"> download </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <!-- Modal2 -->
-                                            <div class="modal fade" id="lec2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                <div class="modal-dialog" role="document">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header">
-                                                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                            <span aria-hidden="true">&times;</span>
-                                                        </button>
-                                                        </div>
-                                                        
-                                                        <div class="modal-body">
-                                                                        <iframe class="embed-responsive-item" id="video" src="https://drive.google.com/file/d/1wGwpjIbo_360Qy3WmDB8neZLta9lSSC-/preview"></iframe>
-                                                        </div>
-
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                            <button type="button" class="btn btn-primary">Save changes</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-                                         <!-- ***************************** end lectures Modals ***************************** -->
-
-
-                                        <!-- ***************************** start sections Modals ***************************** -->
-
-                                        <!-- Modal1 -->
-                                        <div class="modal fade" id="sec1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                            <div class="modal-dialog" role="document">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
-                                                    </div>
-
-                                                    <div class="modal-body">
-                                                        <iframe src="https://drive.google.com/file/d/1dAqRmaM5Y94-z74qj8spLLtSMT32TgF5/preview" width="640" height="480"></iframe>
-                                                    </div>
-
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-                                                        <a href="https://drive.google.com/uc?export=download&id=1dAqRmaM5Y94-z74qj8spLLtSMT32TgF5" class="btn btn-primary"> download </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Modal2 -->
-                                        <div class="modal fade" id="sec2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                            <div class="modal-dialog" role="document">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
-                                                    </div>
-                                                    
-                                                    <div class="modal-body">
-                                                                    <iframe class="embed-responsive-item" id="video" src="https://drive.google.com/file/d/1wGwpjIbo_360Qy3WmDB8neZLta9lSSC-/preview"></iframe>
-                                                    </div>
-
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                        <button type="button" class="btn btn-primary">Save changes</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- ***************************** end sections Modals ***************************** -->
-
-                                      
-                                  </div>
-      
-                              </div>
-                          </section>
-      
                       
             </div>
         </section>
@@ -627,8 +530,8 @@
                   </div>
                   <div class="col-md-4 ftco-animate">
                     <div class="blog-entry wow bounceInDown">
-                      <a href="img/team/2.jpg" class="d-block" style="background-image: url('img/team/2.jpg');">
-                        <img class="img-card bf" src="img/team/2.jpg">
+                      <a href="img/team/2.jpeg" class="d-block" style="background-image: url('img/team/2.jpeg');">
+                        <img class="img-card bf" src="img/team/2.jpeg">
                       </a>
                       <div class="text pt-3 pb-4 px-4">
                         <div class="meta">
@@ -687,7 +590,7 @@
 
         <!-- Footer-->
         <footer class="bg-light py-5">
-            <div class="container"><div class="small text-center text-muted">Copyright © 2020 - Start Bootstrap</div></div>
+            <div class="container"><div class="small text-center text-muted">Copyright © 2020 - AREA-web-design-team </div></div>
         </footer>
 
 
@@ -707,6 +610,8 @@
         <!-- counter up -->
 
         <!-- Bootstrap core JS-->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 

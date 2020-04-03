@@ -95,5 +95,23 @@ $(document).ready(function() {
   // document ready  
   });
   
+  $(document).ready(function()
+  {
+    var colorLi = $(".color-option ul li");
+    colorLi 
+    
+  .eq(0).css("background","#f4623a").end()
+  .eq(1).css("background","rgb(247, 45, 45)").end()
+  .eq(2).css("background","#17a2b8").end()
+  .eq(3).css("background","#6f42c1").end()
+  .eq(4).css("background","#28a745");
+  
+  $(".color-option ul li").click(function()
+  {
+    $(':root').css('--myprimeColor', $(this).css("background-color"));
+
+  });
+  
+});
   
   
