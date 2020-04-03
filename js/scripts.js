@@ -101,17 +101,65 @@ $(document).ready(function() {
     colorLi 
     
   .eq(0).css("background","#f4623a").end()
-  .eq(1).css("background","rgb(247, 45, 45)").end()
+  .eq(1).css("background","#f72d2d").end()
   .eq(2).css("background","#17a2b8").end()
   .eq(3).css("background","#6f42c1").end()
-  .eq(4).css("background","#ffa41b");
+  .eq(4).css("background","#ffa41b").end()
+  .eq(5).css("background","#000");
   
   $(".color-option ul li").click(function()
   {
-    $(':root').css('--myprimeColor', $(this).css("background-color"));
-
+    $(':root').css({
+      // '--myprimeColor': $(this).css("background-color") ,
+    });
+    if( $(this).css("background-color") == "rgb(244, 98, 58)" ){
+      $(':root').css({
+        '--myprimeColor': $(this).css("background-color") ,
+        '--myprimeColorblack': "#ee3e0d"
+      });
+    } else if( $(this).css("background-color") == "rgb(247, 45, 45)" ){
+      $(':root').css({
+        '--myprimeColor': $(this).css("background-color") ,
+        '--myprimeColorblack': "#a81a1a"
+      });
+    } else if( $(this).css("background-color") == "rgb(23, 162, 184)" ){
+      $(':root').css({
+        '--myprimeColor': $(this).css("background-color") ,
+        '--myprimeColorblack': "#005081"
+      });
+    } else if( $(this).css("background-color") == "rgb(111, 66, 193)" ){
+      $(':root').css({
+        '--myprimeColor': $(this).css("background-color") ,
+        '--myprimeColorblack': "rgb(77, 43, 139)"
+      });
+    } else if( $(this).css("background-color") == "rgb(255, 164, 27)" ){
+      $(':root').css({
+        '--myprimeColor': $(this).css("background-color") ,
+        '--myprimeColorblack': "#be7d1c"
+      });
+    }
+    //  else if( $(this).css("background-color") == "rgb(0 , 0 , 0 )" ){
+    //   $(':root').css({
+    //     '--myprimeColor': $(this).css("background-color") ,
+    //     '--myprimeColorblack': "#be7d1c"
+    //   });
+    // }
   });
-  
 });
   
-  
+// var colors = [
+//   "#f4623a",
+//   "#f72d2d",
+//   "#17a2b8",
+//   "#ffa41b"
+// ];
+
+// // get random color from array
+// function getColor() {
+//    return colors[
+//      Math.floor(Math.random() * colors.length)
+//    ];
+// }
+
+// // Set the color from array
+// document.documentElement.style.setProperty('--myprimeColor', getColor());
