@@ -153,13 +153,15 @@ sup {
 }
 
 a {
-  color: #f4623a;
+  /* color: #f4623a; */
+  color: var(--myprimeColor);
   text-decoration: none;
   background-color: transparent;
 }
 a:hover {
-  color: #d6370c;
-  text-decoration: underline;
+  /* color: #d6370c; */
+  color: var(--myprimeColorblack);
+  text-decoration: none;
 }
 
 a:not([href]) {
@@ -10235,7 +10237,7 @@ ul li {
   display: inline;
 }
 
-ul li svg {
+ul li i {
   font-size: 30px !important;
 }
 
