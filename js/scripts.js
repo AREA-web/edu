@@ -104,7 +104,7 @@ $(document).ready(function() {
   .eq(1).css("background","rgb(247, 45, 45)").end()
   .eq(2).css("background","#17a2b8").end()
   .eq(3).css("background","#6f42c1").end()
-  .eq(4).css("background","#28a745");
+  .eq(4).css("background","#ffa41b");
   
   $(".color-option ul li").click(function()
   {
