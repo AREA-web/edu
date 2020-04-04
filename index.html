@@ -95,7 +95,89 @@
                         <h2 class="text-black mt-0 wow bounceInUp">كل المناهج هنا </h2>
                         <hr class="divider light my-4" />
                         <p class="text-black-50 mb-4 wow bounceInUp"> مناهج جميع الصفوف و جميع الاقسام </p>
-                        <a class="btn btn-light btn-xl js-scroll-trigger" href="#services"> ابدأ </a>
+
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <a class="btn btn-light btn-xl js-scroll-trigger" href="#services"> ابدأ </a>
+                            <a class="btn btn-light btn-xl js-scroll-trigger" data-toggle="modal" data-target="#form"> دخول </a>
+                        </div>
+
+
+                        <!-- ************************** regForm ************************** -->
+                        <!-- Modal -->
+                        <div class="modal fade" id="form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="modal-body">
+                                        <div class="container-fluid">
+                                            <div class=" col-lg-12 col-md-6 " >
+                                                
+                                                <form class="log" action="">
+                                                    <a class="Register" id="form">  انتقل الي انشاء حساب جديد </a>
+                                                    <div class="form-group">
+                                                    <label for="email"> : اكتب الايميل الخاص بك </label>
+                                                    <input type="email" class="form-control" id="email">
+                                                    </div>
+                                                    <div class="form-group">
+                                                    <label for="pwd"> : كلمة المرور </label>
+                                                    <input type="password" class="form-control" id="pwd">
+                                                    </div>
+                                                    <div class="checkbox">
+                                                    <label><input type="checkbox"> تذكرني </label>
+                                                    </div>
+                                                    <button type="button" class="btn btn-sucsess sign">تسجيل الدخول </button>
+                                                    <!-- <a class="Register"> Register </a> -->
+                                                </form>
+
+                                                <form class="reg" action="">
+                                                    <div class="form-group">
+                                                        <a class="Register" id="form"> انتقل الي تسجيل الدخول </a>
+                                                    <label for="text"> : الاسم الاول  </label>
+                                                    <input type="email" class="form-control" id="Fname">
+
+                                                    <label for="text"> : اسم العائلة </label>
+                                                    <input type="email" class="form-control" id="Lname">
+
+                                                    <label for="email">: الايميل الخاص بك </label>
+                                                    <input type="email" class="form-control" id="email2">
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                    <label for="pwd"> : كلمة المرو </label>
+                                                    <input type="password" class="form-control" id="pwd2">
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label for="pwd"> : اعد كتابة كلمة المرور </label>
+                                                        <input type="password" class="form-control" id="pwd3">
+                                                    </div>
+                                                
+                                                    <button type="button" id="show" class="btn btn-sucsess sign"> : اظهر كلمة المرور </button>
+
+                                                    <button type="button" class="btn btn-sucsess sign"> انشاء حساب جديد </button>
+                                                    
+                                                </form>
+
+                                            </div>
+                                        </div>
+                                    </div>	
+                                </div>
+                                <!-- <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                                </div> -->
+                            </div>
+                            </div>
+                        </div>
+
+
+                        
                     </div>
                 </div>
             </div>
@@ -1367,7 +1449,8 @@
                     </div>
                   </div>
 
-              </div>
+            </div>
+
             </div>
           </section>
 
@@ -1410,11 +1493,11 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 
         <!-- Core theme JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slidesjs/3.0/jquery.slides.min.js" integrity="sha256-g57NjvZT9kUcXYfgCMoQ/q6KssyDl/xAZE0ooOaK1Tk=" crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script>
 
         <!-- JS here -->
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
         <!-- font awesome -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>

@@ -3945,6 +3945,7 @@ input[type=button].btn-block {
   border: 1px solid transparent;
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
+  color: var(--primeFontColor);
 }
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
   border-color: #e9ecef #e9ecef #dee2e6;
@@ -7516,6 +7517,7 @@ button.bg-dark:focus {
 .mb-0,
 .my-0 {
   margin-bottom: 0 !important;
+  text-align: center;
 }
 
 .ml-0,
@@ -10042,7 +10044,8 @@ hr.light {
   color: #212529;
 }
 #mainNav .navbar-nav .nav-item .nav-link {
-  color: #6c757d;
+  /* color: #6c757d; */
+  color: var(--primeFontColor);
   font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   font-size: 0.9rem;
@@ -10090,7 +10093,8 @@ hr.light {
     color: #f4623a;
   }
   #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link {
-    color: #212529;
+    /* color: #212529; */
+    color: var(--primeFontColor);
   }
   #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover {
     color: #f4623a;
@@ -10237,7 +10241,7 @@ ul li {
   display: inline;
 }
 
-ul li i {
+ul li i , ul li svg {
   font-size: 30px !important;
 }
 
@@ -10251,7 +10255,7 @@ iframe{
 
 .option-box{
   position: fixed;
-  top:70px;
+  top:269px;
   left:0;
   z-index: 9999
 }
@@ -10267,7 +10271,7 @@ iframe{
 .option-box .color-option ul li{
   width: 20px;
   height: 20px;
-  
+  cursor: pointer;
   display: inline-block;
   margin-right: 3px
 }
@@ -10280,6 +10284,34 @@ iframe{
 .fa-x{
   width: 50px;
   background-color: var(--myprimeColor);
+}
+
+.sign{
+  background: #615CFD;
+  padding: 12px 40px;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  transition: all 1s ease-in-out ;
+  border: 1px solid #615CFD;
+  margin: 5px 0;
+}
+
+.sign:hover{
+  color: #615CFD;
+  border: 1px solid #615CFD;
+  background: #fff;
+}
+
+.Register{
+  display: block;
+  margin: 10px 0;
+  color: #ddd !important;
+}
+
+a{
+  cursor: pointer !important;
 }
 
 /* my add */
