@@ -10255,11 +10255,7 @@ iframe{
 
 .option-box{
   position: fixed;
-<<<<<<< HEAD
   top:269px;
-=======
-  top:267px;
->>>>>>> 9aea5866bd6ae6c4747f2c00fbbf937d7d828358
   left:0;
   z-index: 9999
 }
