@@ -206,3 +206,12 @@ document.getElementById("show").onclick = function () {
         xx--;
     }
 }
+
+$(".top").click(function() {
+  $("html, body").animate({
+    scrollTop: 0
+}, 1500);    
+});
+
+
+

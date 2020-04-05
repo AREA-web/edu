@@ -43,7 +43,7 @@
 ::-webkit-scrollbar {
     width: 12px;
     height: 20px;
-    background-color: ;
+    background-color: var(--light);
 }
  
 ::-webkit-scrollbar-track {
@@ -393,7 +393,7 @@ h3, .h3 {
 }
 
 h4, .h4 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 h5, .h5 {
@@ -10276,6 +10276,29 @@ iframe{
   left:0;
   z-index: 9999
 }
+
+.top {
+  padding: 16px;
+  position: fixed;
+  top: 80%;
+  right: 15px;
+  z-index: 9999;
+  /* background-color: #000; */
+  border-radius: 50%;
+  width: 46px;
+  opacity: .3;
+  transition: all ease-in-out 1s;
+}
+
+.top svg{
+  color: var(--dark);
+  font-size: 35px;
+}
+
+.top:hover{
+  opacity: 1;
+}
+
 .option-box .color-option{
   background: #333;
   color:#fff;
