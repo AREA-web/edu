@@ -213,5 +213,5 @@ $(".top").click(function() {
 }, 1500);    
 });
 
-
+$(".show-ifrm").click(function () { $('.ifrm').attr('src', $(this).data("ifrm")) ; $(".download-ifrm").attr('href', $(this).data("down")) ; } )
 
